@@ -1,0 +1,18 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button {
+	-fx-border-width: 2;
+	-fx-border-color: rgb(0, 253, 220);
+	-fx-background-color: rgba(255,255,255,0);
+    -fx-text-fill: white;   
+    -fx-padding: 20px 50px;
+    -fx-border-radius: 30;
+}
+
+#logo {
+	-fx-fill: linear-gradient(from 0% 0% to 100% 100%, repeat, #4facfe 0%, #00f2fe 50%);	
+}
+
+#background {
+	-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, repeat,  rgb(54,69,99) 40%,#334B49 200%);
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="background" fx:id="anchorPane" prefHeight="549.0" prefWidth="560.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+	<children>
+		<VBox alignment="CENTER" layoutX="34.0" layoutY="139.0" prefHeight="200.0" prefWidth="100.0">
+			<children>
+      				<Text id="logo" fx:id="logo" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe">
+      					<font>
+      						<Font name="Raleway Black" size="88.0" />
+      					</font>
+      				</Text>
+				<Button fx:id="gameButton" mnemonicParsing="false" onAction="#findOpponent" stylesheets="@application.css" text="find opponent">
+					<VBox.margin>
+						<Insets top="50.0" />
+					</VBox.margin>
+				</Button>
+			</children>
+		</VBox>
+		<HBox fx:id="stateBox" alignment="CENTER" layoutY="93.0" prefHeight="46.0" prefWidth="216.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+			<children>
+				<Text fx:id="stateText1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0">
+					<font>
+						<Font name="Raleway Light" size="33.0" />
+					</font>
+				</Text>
+      				<Text fx:id="stateText2" fill="WHITE" layoutX="10.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welocme to">
+      					<font>
+      						<Font name="Raleway Bold" size="33.0" />
+      					</font>
+      				</Text>
+				<Text fx:id="stateText3" fill="WHITE" layoutX="222.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0">
+					<font>
+						<Font name="Raleway Light" size="33.0" />
+					</font>
+				</Text>
+			</children>
+		</HBox>
+      <Button layoutX="254.0" layoutY="491.0" mnemonicParsing="false" onMouseClicked="#resetGame_click" text="Button" visible="false" />
+	</children>
+</AnchorPane>
